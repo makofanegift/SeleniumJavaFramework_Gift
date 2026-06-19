@@ -135,11 +135,9 @@ public class AutomateBasicForm {
     public void viewOnSubmission(){
         driver.findElement(By.xpath("//button[@id = 'view-submission-0']")).click();
     }
-
     @AfterTest
     public void closeBrowser(){
         driver.quit();
     }
-
 
 }
