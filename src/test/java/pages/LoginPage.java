@@ -27,6 +27,7 @@ public class LoginPage {
     public void enterPasswordField (String password){
         WebElement usernameEmailFiled = driver.findElement(userNameField_id);
         WebElement passwordFiled = driver.findElement(with(By.tagName("input")).below(usernameEmailFiled));//relative locator feature. Web Element thta keeps on changing
+        passwordFiled.clear();
         passwordFiled.sendKeys(password);
     }
     public void cliclLoginSubmissionButton (){
